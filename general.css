@@ -1,0 +1,61 @@
+@font-face
+{
+    src: url("fonts/HelveticaLTStd-Bold.ttf") format("truetype");
+    font-family: mainfont;
+    font-weight: bold;
+}
+
+@font-face
+{
+    src: url("fonts/HelveticaLTStd-Roman.otf");
+    font-family: mainfont;
+    font-weight: 100;
+}
+
+
+@font-face
+{
+    src: url("fonts/HelveticaLTStd-UltraComp.otf");
+    font-family: mainfont;
+    font-weight: 200;
+}
+
+
+
+
+body
+{
+    background-color: rgb(22, 25, 39);
+    height: max-content;
+    margin: 0px;
+    font-family: mainfont;
+    overflow: overlay;
+}
+
+*::-webkit-scrollbar
+{
+    background-color: transparent;
+    width: 14px;
+}
+
+*::-webkit-scrollbar-track
+{
+    background-color: transparent;
+    margin-top: 62px;
+    margin-bottom: 2px;
+}
+
+
+*::-webkit-scrollbar-thumb
+{
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover
+{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+

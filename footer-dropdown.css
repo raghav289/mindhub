@@ -1,0 +1,126 @@
+.footer-dropdown
+{
+    background-color: rgb(7, 7, 7);
+    border-radius: 4px;
+    position: absolute;
+    left: -52px;
+    top: -650px;
+    height: min-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px -6px 80px rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: opacity 0.45s;
+    /* pointer-events: none; */
+}
+
+.footer-dropdown-menus
+{
+    font-weight: 100;
+    font-size:20px;
+    word-spacing: -2px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(226, 226, 226);
+}
+
+.footer-dropdown-menus:hover
+{
+    background-color:#fcaf17;
+    cursor: pointer;
+    color: black;
+}
+
+
+.footer-dropdown-menus-top
+{
+    font-weight: 100;
+    font-size:20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    word-spacing: -2px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(226, 226, 226);
+}
+
+.footer-dropdown-menus-top:hover
+{
+    background-color: #fcaf17;
+    cursor: pointer;
+    color: black;
+}
+
+.footer-dropdown-menus-end
+{
+    font-weight: 100;
+    font-size:20px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    word-spacing: -2px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(226, 226, 226);
+}
+
+
+.footer-dropdown-menus-end:hover
+{
+    background-color: #fcaf17;
+    cursor: pointer;
+    color: black;
+}
+
+@media (max-width:1010px)
+{
+    .footer-dropdown-menus
+    {
+        font-size:18px;
+    }
+
+    .footer-dropdown-menus-top
+    {
+        font-size:18px;
+    }
+
+    .footer-dropdown-menus-end
+    {
+        font-size:18px;
+    }
+
+    .footer-dropdown
+    {
+        top:-620px
+    }
+}
+
+
+@media (max-width:720px)
+{
+    .footer-dropdown-menus
+    {
+        font-size:14px;
+    }
+
+    .footer-dropdown-menus-top
+    {
+        font-size:14px;
+    }
+
+    .footer-dropdown-menus-end
+    {
+        font-size:14px;
+    }
+
+    .footer-dropdown
+    {
+        top:-550px
+    }
+}

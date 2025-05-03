@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    width: 500px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 8px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    width: 98vw;
+    height: 100vh;
+    display: block;
+}
+
+
+.username{
+    padding: 20px 10px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    width: 350px;
+    font-weight: bold;
+    transition: outline 0.2s;
+}
+
+.username:hover{
+    outline:3px solid rgb(185, 185, 187);
+}
+
+.password:hover{
+    outline: 3px solid rgb(196, 196, 197);
+}
+
+.username:focus{
+    outline:3px solid rgb(115, 115, 245);
+}
+
+.password:focus{
+    outline:3px solid rgb(115, 115, 245);
+}
+
+.password{
+    padding: 20px 10px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    width: 350px;
+    font-weight: bold;
+    transition: outline 0.2s;
+}
+
+.submit{
+    margin-top: 20px;
+    padding: 15px 10px;
+    width: 150px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background-color: rgb(98, 98, 247);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit:hover{
+    background-color: rgb(69, 69, 251);
+}

@@ -1,0 +1,275 @@
+.slideshow
+{
+    width: 100%;
+    margin-top: 60px;
+    background-color: rgb(39, 44, 63);
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 85px;
+}
+
+.slideshow-image
+{
+    width: 100%;
+    display: block;
+}
+
+.slideshow-image:hover
+{
+    cursor: pointer;
+}
+
+.right-section-primary
+{
+    background-color: rgb(33, 38, 58);
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 30px;
+    position:relative;
+    
+}
+
+.title
+{
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.nitro
+{
+    color: rgb(188, 159, 255);
+}
+
+.title:hover
+{
+    cursor: pointer;
+}
+
+.sub-title
+{
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+}
+
+.sub-title:hover
+{
+    cursor: pointer;
+}
+
+.button
+{
+    background-color: rgb(176, 138, 253);
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-family: mainfont;
+    font-size: 17px;
+
+    border: none;
+
+    margin-top: 30px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    white-space: nowrap;
+    
+    border-radius: 4px;
+    transition: background-color 0.25s , color 0.25s , border 0.25s;
+}
+
+.button:hover
+{
+    background-color: rgb(149, 107, 247);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+}
+
+.slideshow-navigation
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    width: 250px;
+    height: 15px;
+}
+
+.bar-active
+{
+    width: 100%;
+    background-color: rgb(130, 149, 255);
+    border-radius: 20px;
+}
+
+.bar-active:hover
+{
+    cursor: pointer;
+}
+
+.bar
+{
+    width: 100%;
+    background-color:rgb(156, 156, 156);
+    border-radius: 20px;
+}
+
+.bar:hover
+{
+    cursor: pointer;
+    background-color:rgb(197, 197, 197);
+}
+
+
+@media (max-width:1237px)
+{
+    .right-section-primary
+    {
+        padding-top: 50px;
+    }
+
+    .slideshow-navigation
+    {
+        bottom: 70px;
+        left: 30px;
+    }
+
+    .right-section-secondary
+    {
+        display: none;
+    }
+}
+
+
+
+@media (max-width:1080px)
+{
+    .slideshow
+    {
+        grid-template-columns: 1fr;
+        
+    }
+    
+    .right-section-primary
+    {
+        display: none;
+    }
+
+    .right-section-secondary
+    {
+        display: grid;
+        grid-template-columns: 2fr 1fr ;
+        padding-bottom:50px;
+        
+    }
+
+    .inner-left-section
+    {
+        margin-top: 40px;
+        margin-left: 40px;
+        position: relative;
+    }
+
+    .inner-right-section
+    {
+        padding-top: 10px;
+        margin-left: 60px;
+        margin-right: 20px;
+    }
+
+    .slideshow-navigation
+    {
+        bottom: 0px;
+        left: 0px;
+        margin-bottom: 15px;
+    }
+
+    .sub-title
+    {
+        margin-bottom: 100px;
+        line-height: 30px;
+    }
+
+}
+
+@media (max-width:875px)
+{
+    .button
+    {
+        font-size: 15px; 
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .sub-title
+    {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .slideshow-navigation
+    {
+        width: 180px;
+        height: 3px;
+        column-gap: 6px;
+        margin-bottom: 0px;
+    }
+
+
+    .inner-left-section
+    {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width:1238px)
+{
+    .right-section-secondary
+    {
+        display: none;
+    }
+}
+
+@media (max-width:720px)
+{
+    .button
+    {
+        font-size: 13px; 
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .sub-title
+    {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    .slideshow-navigation
+    {
+        width: 120px;
+        height: 3px;
+        column-gap: 6px;
+    }
+
+
+    .inner-left-section
+    {
+        margin-top: 20px;
+    }
+}

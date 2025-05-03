@@ -1,0 +1,121 @@
+.download-section
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.download-container
+{
+    width: 70%;
+    position: relative;
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.4);
+}
+
+.download-poster
+{
+    width: 100%;
+    display: block;
+}
+
+.download-button-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    column-gap: 25px;
+    top: 60%;
+    left: 23%;
+}
+
+.download-button
+{
+    border: none;
+    display: flex;
+    font-family: mainfont;
+    font-weight: 100;
+    padding: 20px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button:hover
+{
+    cursor: pointer;
+}
+
+#download-icon
+{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#device
+{
+    background-color: rgb(87, 140, 255);
+    color: white;
+    transition: background-color 0.5s,box-shadow 0.5s;
+}
+
+#device:hover
+{
+    background-color: rgb(63, 124, 255);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    transition: background-color 0.5s,box-shadow 0.5s;
+}
+
+#browser
+{
+    background-color: rgb(39, 39, 39);
+    color: white;
+    transition: background-color 0.5s,box-shadow 0.5s;
+}
+
+#browser:hover
+{
+    background-color: rgb(58, 58, 58);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    transition: background-color 0.5s,box-shadow 0.5s;
+}
+
+.device-link-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 12%;
+    left: 44%;
+    transition: opacity 0.15s;
+}
+
+.device-link-container:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+
+#right-pointer
+{
+    width: 26px;
+    height: 26px;
+    margin-left: 3px;
+    
+}
+
+.devices-link
+{
+    width: max-content;
+    color: rgba(255,255,255,1);
+    font-family: mainfont;
+    font-weight: 100;
+    font-size: 15px;
+    /* text-decoration: underline;
+    text-underline-offset: 3px; */
+    margin: 0;
+}

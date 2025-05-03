@@ -1,0 +1,186 @@
+.newswire
+{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 150px;
+}
+
+.newswire-header
+{
+    color: white;
+    font-weight:bold;
+    font-size: 26px;
+    letter-spacing: -1px;
+    margin-top: 100px;
+}
+
+.newswire-header:hover
+{
+    cursor: pointer;
+}
+
+.newswire-grid
+{
+    display: grid;
+    margin-top: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 28px;
+    row-gap: 30px;
+    margin-top: 100px;
+}
+
+
+.newswire-content
+{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 1px solid #282828;
+}
+
+.newswire-content:hover
+{
+    cursor: pointer;
+}
+
+.newswire-image
+{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 1px solid #282828;
+}
+
+.newswire-info
+{
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 42px;
+    padding-top: 15px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.row1
+{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.game-name
+{
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.newswire-date
+{
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #868383;
+}
+
+@media (max-width:1020px) and (min-width:930px)
+{
+    .row1
+    {
+        display: block;
+    }
+
+    .newswire-date
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.row2
+{
+    font-size: 22px;
+    line-height: 28px;
+}
+
+@media (max-width:930px)
+{
+    .newswire-grid
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .row2
+    {
+        font-size: 20px;
+    }
+
+    .game-name
+    {
+        font-size: 14px;
+    }
+
+    .newswire-date
+    {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:720px)
+{
+    .newswire-grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .newswire
+    {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .row2
+    {
+        font-size: 18px;
+    }
+
+    .game-name
+    {
+        font-size: 13px;
+    }
+
+    .newswire-date
+    {
+        font-size: 13px;
+    }
+}
+
+.newswire-footer
+{
+    color: rgb(207, 207, 207);
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 45px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+
+.newswire-footer:hover
+{
+    cursor: pointer;
+}
+
+.newswire-footer::after
+{
+    content: '................';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 6px;
+    background: #0cffa2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 23px;
+}
